@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서관리</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="message" id="message"></div>
+        <h1>도서관리 프로그램</h1>
+        <div style="text-align:right; margin-bottom:10px;">
+            <a href="admin.html" class="btn btn-primary">관리자 페이지</a>
+        </div>
+        <table id="book-table">
+            <thead>
+                <tr>
+                    <th>도서명</th>
+                    <th>저자</th>
+                    <th>대출상태</th>
+                    <th>대출/반납</th>
+                    <th>관리</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 도서 목록이 여기에 표시됩니다 -->
+            </tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 

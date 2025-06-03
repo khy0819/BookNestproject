@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서관리 관리자 페이지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="message" id="message"></div>
+        <h1>도서관리 관리자 페이지</h1>
+        <div id="login-section">
+            <form id="login-form" style="max-width:350px;margin:0 auto;">
+                <div class="form-group">
+                    <label for="admin-id">아이디</label>
+                    <input type="text" id="admin-id" required autocomplete="username">
+                </div>
+                <div class="form-group">
+                    <label for="admin-pw">비밀번호</label>
+                    <input type="password" id="admin-pw" required autocomplete="current-password">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%;">로그인</button>
+            </form>
+        </div>
+        <div id="admin-section" style="display:none;">
+            <div style="text-align:right; margin-bottom:10px;">
+                <a href="index.html" class="btn btn-secondary">메인으로</a>
+                <button id="logout-btn" class="btn btn-danger" type="button">로그아웃</button>
+            </div>
+            <table id="admin-book-table">
+                <thead>
+                    <tr>
+                        <th>도서명</th>
+                        <th>저자</th>
+                        <th>대출상태</th>
+                        <th>수정</th>
+                        <th>삭제</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 도서 목록이 여기에 표시됩니다 -->
+                </tbody>
+            </table>
+            <div style="margin-top:40px;">
+                <h2>도서 등록</h2>
+                <form id="add-book-form">
+                    <div class="form-group">
+                        <label for="title">도서명</label>
+                        <input type="text" id="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="author">저자</label>
+                        <input type="text" id="author" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">등록</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html> 
